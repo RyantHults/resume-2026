@@ -231,13 +231,6 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.experience.list.items]]
         details = "Fixed mission-critical bugs, including memory mismanagement issues and segmentation faults."
 
-        [[params.experience.list]]
-        title = "Student Technician"
-        dates = "2014 - 2017"
-        company = "Texas A&M University"
-        details = "Provided comprehensive IT support by troubleshooting hardware and software issues, managing system deployments, and maintaining secure inventory workflows for academic and research environments."
-
-
 
     [params.projects]
         enable = true

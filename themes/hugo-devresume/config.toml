@@ -79,8 +79,18 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.skills.list.items]]
         details = "Object-oriented design"
 
-    
-    
+
+        [[params.skills.list]]
+        title = "AI Tooling"
+        [[params.skills.list.items]]
+        details = "Coding Agents (Claude Code, etc.)"
+        [[params.skills.list.items]]
+        details = "MCP"
+        [[params.skills.list.items]]
+        details = "RAG"
+        [[params.skills.list.items]]
+        details = "Knowledge Graphs"
+
 
         [[params.skills.list]]
         title = "Professional"
@@ -92,9 +102,6 @@ googleAnalytics = "UA-XXXXXXX-Y"
         details = "Enterprise website management"
         [[params.skills.list.items]]
         details = "Agile project management"
-
-
-
 
 
 
@@ -184,7 +191,17 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
         [[params.experience.list]]
         title = "Senior Software Engineer"
-        dates = "2021 - 2025"
+        dates = " September 2025 - Current"
+        company = "Belva"
+        details = "Led complex technical initiatives including a major async views refactor and critical debugging sessions that unblocked the team, demonstrating strong problem-solving skills and willingness to tackle high-impact challenges"
+        [[params.experience.list.items]]
+        details = "Established reputation as trusted code reviewer within first months of joining team, consistently sought out by peers for in-depth technical feedback that examines logic, edge cases, architectural concerns, and potential failure modes beyond surface-level style checks"
+        [[params.experience.list.items]]
+        details = "Accelerated team productivity by integrating AI coding assistants into the SDLC and establishing foundational best practices that reduced technical debt and improved requirements alignment."
+
+        [[params.experience.list]]
+        title = "Senior Software Engineer"
+        dates = "July 2021 - July 2025"
         company = "Monetate"
         details = "As a technical leader, I drove large-scale infrastructure improvements and cost-efficient optimizations while fostering cross-team collaboration to enhance system reliability and operational processes. My work involved modernizing legacy systems, mentoring engineers, and implementing best practices to elevate both technical output and organizational efficiency."
         [[params.experience.list.items]]
@@ -198,7 +215,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
         [[params.experience.list]]
         title = "Software Engineer"
-        dates = "2018 - 2021"
+        dates = "June 2018 - July 2021"
         company = "L3Harris Link Simulation & Training"
         details = "In this role, I contributed to the development and optimization of high-fidelity real-time flight simulators, focusing on system reliability, performance tuning, and direct customer support. My work involved enhancing back-end infrastructure, resolving critical defects, and implementing distributed simulation architectures to ensure robust and efficient training systems."
         [[params.experience.list.items]]

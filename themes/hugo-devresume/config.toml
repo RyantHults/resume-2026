@@ -78,6 +78,8 @@ googleAnalytics = "UA-XXXXXXX-Y"
         details = "Ansible"
         [[params.skills.list.items]]
         details = "Object-oriented design"
+        [[params.skills.list.items]]
+        details = "CI/CD"
 
 
         [[params.skills.list]]

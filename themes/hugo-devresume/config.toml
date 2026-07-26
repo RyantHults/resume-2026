@@ -195,7 +195,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         title = "Senior Software Engineer"
         dates = " September 2025 - July 2026"
         company = "Belva"
-        details = "In my time as Belva, I provided technical leadership across critical engineering initiatives, partnering with cross-functional teams to deliver scalable software, improve engineering practices, and support the organization's long-term technical strategy."
+        details = "In my time at Belva, I provided technical leadership across critical engineering initiatives, partnering with cross-functional teams to deliver scalable software, improve engineering practices, and support the organization's long-term technical strategy."
         [[params.experience.list.items]]
         details = "Served as a technical leader for high-impact initiatives, resolving complex engineering challenges and mentoring teammates through difficult problems."
         [[params.experience.list.items]]

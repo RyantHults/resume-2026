@@ -193,13 +193,13 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
         [[params.experience.list]]
         title = "Senior Software Engineer"
-        dates = " September 2025 - Current"
+        dates = " September 2025 - July 2026"
         company = "Belva"
-        details = "Led complex technical initiatives including a major async views refactor and critical debugging sessions that unblocked the team, demonstrating strong problem-solving skills and willingness to tackle high-impact challenges"
+        details = "Served as a technical leader for high-impact initiatives, resolving complex engineering challenges and mentoring teammates through difficult problems."
         [[params.experience.list.items]]
-        details = "Established reputation as trusted code reviewer within first months of joining team, consistently sought out by peers for in-depth technical feedback that examines logic, edge cases, architectural concerns, and potential failure modes beyond surface-level style checks"
+        details = "Led the rollout of organization-wide AI development practices, improving developer productivity and engineering consistency."
         [[params.experience.list.items]]
-        details = "Accelerated team productivity by integrating AI coding assistants into the SDLC and establishing foundational best practices that reduced technical debt and improved requirements alignment."
+        details = "Drove product and engineering improvements by providing actionable technical guidance, influencing design decisions, and advocating for scalable solutions."
 
         [[params.experience.list]]
         title = "Senior Software Engineer"

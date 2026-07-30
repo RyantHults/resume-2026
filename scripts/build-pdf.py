@@ -21,7 +21,6 @@ import sys
 
 try:
     from weasyprint import HTML
-    from weasyprint.text.fonts import FontConfiguration
     from weasyprint import WeasyPrintError
 except ImportError as exc:
     print(f"Error: WeasyPrint is not installed ({exc}).", file=sys.stderr)

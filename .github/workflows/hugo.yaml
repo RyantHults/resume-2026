@@ -50,7 +50,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           fetch-depth: 0
       - name: Setup Pages
         id: pages
@@ -96,7 +95,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: 'pip'
       - name: Install WeasyPrint
         run: pip install weasyprint==69.0
       - name: Build resume PDF

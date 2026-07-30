@@ -21,10 +21,9 @@ import sys
 
 try:
     from weasyprint import HTML
-    from weasyprint import WeasyPrintError
 except ImportError as exc:
     print(f"Error: WeasyPrint is not installed ({exc}).", file=sys.stderr)
-    print("Install it with: pip install weasyprint==69.0", file=sys.stderr)
+    print("Install it with: pip install weasyprint", file=sys.stderr)
     sys.exit(1)
 
 
@@ -130,7 +129,7 @@ def render_pdf(input_path: str, output_path: str) -> None:
             presentational_hints=True,
             optimize_images=True,
         )
-    except WeasyPrintError as exc:
+    except Exception as exc:
         print(
             f"Error: WeasyPrint failed to process {abs_input} — {exc}",
             file=sys.stderr,

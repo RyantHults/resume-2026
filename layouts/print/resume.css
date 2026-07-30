@@ -1,0 +1,236 @@
+@page {
+  size: letter portrait;
+  margin: 0.5in 1in;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Calibri, "Calibri Light", "Segoe UI", sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.18;
+  color: #1a1a1a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header */
+.resume-header {
+  text-align: center;
+  margin-bottom: 8pt;
+}
+
+.name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28pt;
+  font-weight: normal;
+  margin: 0 0 3pt 0;
+  line-height: 1.1;
+}
+
+.name .last-name {
+  color: #a6291f;
+}
+
+.location {
+  font-size: 9pt;
+  color: #595959;
+  margin-bottom: 3pt;
+}
+
+.contact-line {
+  font-size: 9pt;
+  color: #595959;
+}
+
+.contact-separator {
+  margin: 0 5pt;
+  color: #595959;
+}
+
+/* Section headings */
+.section-heading {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13.5pt;
+  font-weight: normal;
+  color: #1a1a1a;
+  margin-top: 8pt;
+  margin-bottom: 5pt;
+  border-bottom: 0.5pt solid #bfbfbf;
+  padding-bottom: 2pt;
+}
+
+/* Summary */
+.summary {
+  margin: 0 0 4pt 0;
+}
+
+.summary p {
+  margin: 0;
+}
+
+/* Two-column tables */
+.info-table,
+.experience-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-table td,
+.experience-table td {
+  vertical-align: top;
+  padding: 0;
+}
+
+.info-table tr {
+  break-inside: avoid;
+}
+
+.info-table .label {
+  width: 1.05in;
+  padding-right: 12pt;
+  text-align: right;
+  font-weight: bold;
+}
+
+.info-table .value {
+  width: 100%;
+  padding-bottom: 3pt;
+}
+
+.info-table tr:last-child .value {
+  padding-bottom: 0;
+}
+
+/* Education */
+.education-degree {
+  margin-bottom: 0.5pt;
+}
+
+.education-school {
+  margin-bottom: 0.5pt;
+}
+
+.education-dates {
+  margin-bottom: 0.5pt;
+  color: #595959;
+}
+
+/* Skills */
+.skill-category {
+  font-weight: bold;
+  margin-bottom: 0.5pt;
+}
+
+.skill-items {
+  margin-bottom: 4pt;
+}
+
+.skill-items:last-child {
+  margin-bottom: 0;
+}
+
+.skill-items p {
+  display: inline;
+  margin: 0;
+}
+
+/* Languages / Interests */
+.inline-list p {
+  display: inline;
+  margin: 0;
+}
+
+/* Experience table */
+.experience-table tr {
+  break-inside: avoid;
+}
+
+.experience-table td {
+  padding-bottom: 5pt;
+}
+
+.experience-table tr:last-child td {
+  padding-bottom: 0;
+}
+
+.experience-table .job-meta {
+  width: 1.85in;
+  padding-right: 12pt;
+}
+
+.experience-table .job-content {
+  width: 100%;
+}
+
+.job-title {
+  margin-bottom: 0.5pt;
+}
+
+.job-dates {
+  margin-bottom: 0.5pt;
+  color: #595959;
+}
+
+.job-company {
+  margin-bottom: 0.5pt;
+  font-style: italic;
+}
+
+.job-summary {
+  margin-bottom: 3.3pt;
+}
+
+.job-summary p {
+  margin: 0;
+}
+
+/* Bullets */
+.bullet {
+  padding-left: 0.28in;
+  text-indent: -0.14in;
+  margin-bottom: 3.3pt;
+}
+
+.bullet::before {
+  content: "▪  ";
+}
+
+.bullet p {
+  display: inline;
+  margin: 0;
+}
+
+/* Projects */
+.project {
+  break-inside: avoid;
+  margin-bottom: 3pt;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-meta {
+  font-size: 8.5pt;
+  color: #595959;
+  margin-left: 4pt;
+}
+
+.project-tagline {
+  margin-top: 1pt;
+}

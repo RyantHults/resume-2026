@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Site.Params.profile.name }} - Resume</title>
+  <style>
+    @page {
+      size: letter portrait;
+      margin: 0.5in 1in;
+    }
+
+    @font-face {
+      font-family: 'CarlitoSub';
+      src: url('fonts/Carlito-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'CarlitoSub';
+      src: url('fonts/Carlito-Bold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'GelasioSub';
+      src: url('fonts/Gelasio-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'GelasioSub';
+      src: url('fonts/Gelasio-Bold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'CarlitoSub', 'Liberation Sans', 'DejaVu Sans', sans-serif;
+      font-size: 9.5pt;
+      font-weight: normal;
+      line-height: 1.25;
+      color: #1a1a1a;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Header */
+    .resume-header {
+      text-align: center;
+      margin-bottom: 8pt;
+    }
+
+    .name {
+      font-family: 'GelasioSub', 'Liberation Serif', 'DejaVu Serif', serif;
+      font-size: 28pt;
+      font-weight: normal;
+      margin: 0 0 3pt 0;
+      line-height: 1.1;
+    }
+
+    .name .last-name {
+      color: #a6291f;
+    }
+
+    .location {
+      font-size: 9pt;
+      color: #595959;
+      margin-bottom: 3pt;
+    }
+
+    .contact-line {
+      font-size: 9pt;
+      color: #595959;
+    }
+
+    .contact-separator {
+      margin: 0 5pt;
+      color: #595959;
+    }
+
+    .contact-icon {
+      height: 0.9em;
+      width: auto;
+      vertical-align: -0.1em;
+      margin-right: 2pt;
+    }
+
+    /* Section headings */
+    .section-heading {
+      font-family: 'GelasioSub', 'Liberation Serif', 'DejaVu Serif', serif;
+      font-size: 13.5pt;
+      font-weight: normal;
+      color: #1a1a1a;
+      text-align: left;
+      margin-top: 8pt;
+      margin-bottom: 5pt;
+      border-bottom: 0.5pt solid #bfbfbf;
+      padding-bottom: 2pt;
+    }
+
+    /* Summary */
+    .summary {
+      margin: 0 0 4pt 0;
+    }
+
+    .summary p {
+      margin: 0;
+    }
+
+    /* Two-column tables */
+    .info-table,
+    .experience-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .info-table td,
+    .experience-table td {
+      vertical-align: top;
+      padding: 0;
+    }
+
+    .info-table tr {
+      break-inside: avoid;
+    }
+
+    .info-table .label {
+      width: 1.3in;
+      min-width: 1.3in;
+      padding-right: 12pt;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .info-table .value {
+      width: 100%;
+      padding-bottom: 3pt;
+    }
+
+    .info-table tr:last-child .value {
+      padding-bottom: 0;
+    }
+
+    /* Education */
+    .education-degree {
+      margin-bottom: 0.5pt;
+    }
+
+    .education-school {
+      margin-bottom: 0.5pt;
+    }
+
+    .education-dates {
+      margin-bottom: 0.5pt;
+      color: #595959;
+    }
+
+    /* Skills */
+    .skill-category {
+      font-weight: bold;
+      margin-bottom: 0.5pt;
+    }
+
+    .skill-items {
+      margin-bottom: 4pt;
+    }
+
+    .skill-items:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-items p {
+      display: inline;
+      margin: 0;
+    }
+
+    /* Languages / Interests */
+    .inline-list p {
+      display: inline;
+      margin: 0;
+    }
+
+    /* Experience table */
+    .experience-table tr {
+      break-inside: avoid;
+    }
+
+    .experience-table td {
+      padding-bottom: 5pt;
+    }
+
+    .experience-table tr:last-child td {
+      padding-bottom: 0;
+    }
+
+    .experience-table .job-meta {
+      width: 1.3in;
+      min-width: 1.3in;
+      padding-right: 12pt;
+    }
+
+    .experience-table .job-content {
+      width: 100%;
+    }
+
+    .job-title {
+      margin-bottom: 0.5pt;
+    }
+
+    .job-dates {
+      margin-bottom: 0.5pt;
+      color: #595959;
+    }
+
+    .job-company {
+      margin-bottom: 0.5pt;
+      font-style: italic;
+    }
+
+    .job-summary {
+      margin-bottom: 3.3pt;
+    }
+
+    .job-summary p {
+      margin: 0;
+    }
+
+    /* Bullets */
+    .bullet {
+      position: relative;
+      padding-left: 0.18in;
+      margin-bottom: 3.3pt;
+      min-height: 0.08in;
+    }
+
+    .bullet::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0.035in;
+      height: 0.035in;
+      background-color: #1a1a1a;
+    }
+
+    .bullet p {
+      display: inline;
+      margin: 0;
+    }
+
+    /* Projects */
+    .project {
+      break-inside: avoid;
+      margin-bottom: 3pt;
+    }
+
+    .project:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-title {
+      font-weight: bold;
+    }
+
+    .project-meta {
+      font-size: 8.5pt;
+      color: #595959;
+      margin-left: 4pt;
+    }
+
+    .project-tagline {
+      margin-top: 1pt;
+    }
+
+    .interests-projects-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 4pt;
+    }
+
+    .interests-projects-table td {
+      vertical-align: top;
+      padding: 0;
+    }
+
+    .interests-cell {
+      width: 1.3in;
+      min-width: 1.3in;
+      padding-right: 12pt;
+      padding-top: 4pt;
+    }
+
+    .interests-list {
+      line-height: 1.6;
+    }
+
+    .projects-cell {
+      width: 100%;
+      padding-top: 4pt;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <header class="resume-header">
+      {{ $nameParts := split .Site.Params.profile.name " " }}
+      <h1 class="name">
+        {{ range $i, $part := $nameParts }}
+          {{- if $i }} {{ end -}}
+          {{- if eq $i (sub (len $nameParts) 1) -}}
+            <span class="last-name">{{ $part }}</span>
+          {{- else -}}
+            {{ $part }}
+          {{- end -}}
+        {{ end }}
+      </h1>
+      <div class="location">{{ .Site.Params.contact.location }}</div>
+      <div class="contact-line">
+        {{ $first := true }}
+        {{ range .Site.Params.contact.list }}
+          {{- if not $first }}<span class="contact-separator">|</span>{{ end -}}
+          {{- $first = false -}}
+          {{- if eq .icon "fas fa-phone-square" -}}<img src="contact-icons/phone.png" class="contact-icon" alt="">
+          {{- else if eq .icon "fas fa-envelope-square" -}}<img src="contact-icons/email.png" class="contact-icon" alt="">
+          {{- else if eq .icon "fas fa-globe" -}}<img src="contact-icons/globe.png" class="contact-icon" alt="">
+          {{- end -}}
+          <a href="{{ .url | safeURL }}">{{ .text }}</a>
+        {{ end }}
+        {{ range .Site.Params.social.list }}
+          {{- if not $first }}<span class="contact-separator">|</span>{{ end -}}
+          {{- $first = false -}}
+          {{- if eq .icon "fab fa-github-square" -}}<img src="contact-icons/github.png" class="contact-icon" alt="">
+          {{- else if eq .icon "fab fa-linkedin" -}}<img src="contact-icons/linkedin.png" class="contact-icon" alt="">
+          {{- end -}}
+          <a href="{{ .url | safeURL }}">{{ .title }}</a>
+        {{ end }}
+      </div>
+    </header>
+
+    <section class="info-section">
+      <h2 class="section-heading">Summary</h2>
+      <table class="info-table">
+        <colgroup>
+          <col style="width: 1.3in">
+          <col style="width: auto">
+        </colgroup>
+        <tr>
+          <td class="label">Education</td>
+          <td class="value">
+            {{ range .Site.Params.education.list }}
+            <div>{{ .degree }}, {{ .university }}, {{ .dates }}</div>
+            {{ end }}
+          </td>
+        </tr>
+        {{ range .Site.Params.skills.list }}
+        {{ if ne .title "Professional" }}
+        <tr>
+          <td class="label">{{ .title }}</td>
+          <td class="value">
+            {{ $details := slice }}
+            {{ range .items }}{{ $details = $details | append .details }}{{ end }}
+            {{ delimit $details ", " }}
+          </td>
+        </tr>
+        {{ end }}
+        {{ end }}
+        {{ if .Site.Params.programming_languages.enable }}
+        <tr>
+          <td class="label">Languages</td>
+          <td class="value">
+            {{ $langs := slice }}
+            {{ range .Site.Params.programming_languages.list }}{{ $langs = $langs | append .name }}{{ end }}
+            {{ delimit $langs ", " }}
+          </td>
+        </tr>
+        {{ end }}
+      </table>
+    </section>
+
+    <section class="experience-section">
+      <h2 class="section-heading">Work Experience</h2>
+      <table class="experience-table">
+        {{ range .Site.Params.experience.list }}
+        <tr>
+          <td class="job-meta">
+            <div class="job-title">{{ .title }}</div>
+            <div class="job-dates">{{ .dates }}</div>
+            <div class="job-company">{{ .company }}</div>
+          </td>
+          <td class="job-content">
+            {{ range .items }}
+            <div class="bullet">{{ .details | markdownify }}</div>
+            {{ end }}
+          </td>
+        </tr>
+        {{ end }}
+      </table>
+    </section>
+
+    <section class="interests-projects-section">
+      <table class="interests-projects-table">
+        <colgroup>
+          <col style="width: 1.3in">
+          <col style="width: auto">
+        </colgroup>
+        <tr>
+          <td class="interests-cell">
+            <h2 class="section-heading">Interests</h2>
+            <div class="interests-list">
+              {{ range $i, $item := .Site.Params.interests.list }}
+                {{- if $i }}<br>{{ end -}}
+                {{ $item.name }}
+              {{ end }}
+            </div>
+          </td>
+          <td class="projects-cell">
+            <h2 class="section-heading">Projects</h2>
+            {{ range first 2 .Site.Params.projects.list }}
+            <div class="project">
+              <span class="project-title">{{ .title }}</span>
+              <span class="project-meta">{{ .meta }}</span>
+              <div class="project-tagline">{{ .tagline }}</div>
+            </div>
+            {{ end }}
+          </td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

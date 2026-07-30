@@ -6,3 +6,231 @@ theme = 'hugo-devresume'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+# ──────────────────────────────────────────────
+# RESUME CONTENT — edit this section only.
+# Root [params] overrides the theme's config.toml
+# because Hugo's project config takes precedence.
+# ──────────────────────────────────────────────
+
+[params]
+    author = "Ryan Hults"
+    description = "Ryan Hults — Senior Software Engineer"
+
+    primaryColor = "#500000"
+    textPrimaryColor = "#292929"
+
+    [params.profile]
+        enable = true
+        name = "Ryan Hults"
+        tagline = "Senior Software Engineer"
+        avatar = "avatar.png"
+
+    [params.contact]
+        enable = true
+        location = "Fort Worth, Texas"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:+14053456770"
+        text = "(+1) 405-345-6770"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:contact@ryanthults.com"
+        text = "contact@ryanthults.com"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "https://ryanthults.com"
+        text = "ryanthults.com"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Technologies"
+        [[params.skills.list.items]]
+        details = "AWS/ECS/EC2"
+        [[params.skills.list.items]]
+        details = "Django/SQLAlchemy"
+        [[params.skills.list.items]]
+        details = "PostgreSQL/MySQL"
+        [[params.skills.list.items]]
+        details = "Docker"
+        [[params.skills.list.items]]
+        details = "Ansible"
+        [[params.skills.list.items]]
+        details = "Object-oriented design"
+        [[params.skills.list.items]]
+        details = "CI/CD"
+
+        [[params.skills.list]]
+        title = "AI Tooling"
+        [[params.skills.list.items]]
+        details = "Coding Agents (Claude Code, etc.)"
+        [[params.skills.list.items]]
+        details = "MCP"
+        [[params.skills.list.items]]
+        details = "RAG"
+        [[params.skills.list.items]]
+        details = "Knowledge Graphs"
+
+        [[params.skills.list]]
+        title = "Professional"
+        [[params.skills.list.items]]
+        details = "Full-stack development"
+        [[params.skills.list.items]]
+        details = "Scaleable Cloud-based microservices"
+        [[params.skills.list.items]]
+        details = "Enterprise website management"
+        [[params.skills.list.items]]
+        details = "Agile project management"
+
+    [params.programming_languages]
+        enable = true
+
+        [[params.programming_languages.list]]
+        name = "Python"
+        [[params.programming_languages.list]]
+        name = "SQL"
+        [[params.programming_languages.list]]
+        name = "JavaScript"
+        [[params.programming_languages.list]]
+        name = "React.JS"
+        [[params.programming_languages.list]]
+        name = "HTML"
+        [[params.programming_languages.list]]
+        name = "CSS"
+        [[params.programming_languages.list]]
+        name = "C++"
+        [[params.programming_languages.list]]
+        name = "C"
+        [[params.programming_languages.list]]
+        name = "Node.JS"
+        [[params.programming_languages.list]]
+        name = "PHP"
+        [[params.programming_languages.list]]
+        name = "Java"
+        [[params.programming_languages.list]]
+        name = "jQuery"
+        [[params.programming_languages.list]]
+        name = "Tcl"
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "BS in Eletronic Systems Engineering"
+        university = "Texas A&M University"
+        dates = "2016"
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "English"
+        level = "Native"
+
+    [params.interests]
+        enable = true
+        details = "Climbing, 3d Modeling and Printing, Progressive Metal, DIY"
+
+        [[params.interests.list]]
+        name = "Climbing"
+        [[params.interests.list]]
+        name = "3d CAD and Printing"
+        [[params.interests.list]]
+        name = "Progressive Metal"
+        [[params.interests.list]]
+        name = "DIY/Home Automation"
+
+    [params.summary]
+        enable = true
+        text = "With 7+ years of backend development experience and a passion for full-stack applications and DevOps, I specialize in building efficient, scalable systems. My work spans from greenfield architecting, to performance tuning, to infrastructure automation and beyond. I'm always focused on clean, maintainable code that delivers measurable impact. From defense systems to SaaS platforms, I thrive on solving complex technical challenges across the stack."
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Senior Software Engineer"
+        dates = " September 2025 - July 2026"
+        company = "Belva"
+        details = "In my time at Belva, I provided technical leadership across critical engineering initiatives, partnering with cross-functional teams to deliver scalable software, improve engineering practices, and support the organization's long-term technical strategy."
+        [[params.experience.list.items]]
+        details = "Served as a technical leader for high-impact initiatives, resolving complex engineering challenges and mentoring teammates through difficult problems."
+        [[params.experience.list.items]]
+        details = "Led the rollout of organization-wide AI development practices, improving developer productivity and engineering consistency."
+        [[params.experience.list.items]]
+        details = "Drove product and engineering improvements by providing actionable technical guidance, influencing design decisions, and advocating for scalable solutions."
+
+        [[params.experience.list]]
+        title = "Senior Software Engineer"
+        dates = "July 2021 - July 2025"
+        company = "Monetate"
+        details = "As a technical leader, I drove large-scale infrastructure improvements and cost-efficient optimizations while fostering cross-team collaboration to enhance system reliability and operational processes. My work involved modernizing legacy systems, mentoring engineers, and implementing best practices to elevate both technical output and organizational efficiency."
+        [[params.experience.list.items]]
+        details = "Led the planning and implementation of a major refactor of our AI product offering, reducing compute costs by over 20% and increasing client revenue per session by 30%. Managed team agile processes throughout the project."
+        [[params.experience.list.items]]
+        details = "Led the planning and execution of migrating critical components of the company's codebase from Python 2 to Python 3, ensuring compatibility and minimal disruption."
+        [[params.experience.list.items]]
+        details = "Led cross-team initiatives to streamline and document critical processes, enhancing operational efficiency and knowledge sharing"
+        [[params.experience.list.items]]
+        details = "Guided junior engineers through Python best practices and system design, improving team code quality and output."
+
+        [[params.experience.list]]
+        title = "Software Engineer"
+        dates = "June 2018 - July 2021"
+        company = "L3Harris Link Simulation & Training"
+        details = "In this role, I contributed to the development and optimization of high-fidelity real-time flight simulators, focusing on system reliability, performance tuning, and direct customer support. My work involved enhancing back-end infrastructure, resolving critical defects, and implementing distributed simulation architectures to ensure robust and efficient training systems."
+        [[params.experience.list.items]]
+        details = "Design, development and debugging of high-fidelity real-time F-18 simulator."
+        [[params.experience.list.items]]
+        details = "Provided on-site support and de-bugging while interacting directly with customers."
+        [[params.experience.list.items]]
+        details = "Improved back-end infrastructure to reduce complexity and coldstart times by 15%."
+        [[params.experience.list.items]]
+        details = "Worked on HLA, middleware logic, and MAK Logger interface"
+        [[params.experience.list.items]]
+        details = "Design and maintain a High-Level Architecture (HLA) Federate."
+        [[params.experience.list.items]]
+        details = "Fixed mission-critical bugs, including memory mismanagement issues and segmentation faults."
+
+    [params.projects]
+        enable = true
+
+        [[params.projects.list]]
+        title = "Personal Cloud Media Delivery Service"
+        meta = "Ansible, Docker, Python, S3"
+        tagline = "A cloud-based collection of containerized services that enable management and playback of personal media over the web, leveraging S3 object storage as a scalable, cost-efficient storage solution"
+
+        [[params.projects.list]]
+        title = "Realtime Content Rendering Service"
+        meta = "Python, Amazon ECS, Puppeteer"
+        tagline = "Created a scalable containerized microservice that dynamically generated client-configurable web content on-demand."
+
+        [[params.projects.list]]
+        title = "Zoom-to-Cloud Recording Backup"
+        meta = "JSON, Python"
+        tagline = "Python Application that downloads and organizes all cloud recordings from your Zoom Business account, with optional ability to upload the recordings to SharePoint. Uses Zoom Developer API and Microsoft GraphQL."
+
+        [[params.projects.list]]
+        title = "Internet of Cows"
+        meta = "C, Node.JS, PHP, Python, SQL"
+        tagline = "An Internet of Things wireless monitoring prototype for livestock."
+
+    [params.awards]
+        enable = false
+
+    [params.information]
+        enable = false
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "https://github.com/ryanthults"
+        title = "ryanthults"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "https://linkedin.com/in/rhults"
+        title = "rhults"

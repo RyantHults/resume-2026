@@ -1,0 +1,62 @@
+<!-- Floating download button -->
+<style>
+  .download-fab {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 3.25rem;
+    padding: 0 1.25rem;
+    border-radius: 9999px;
+    background-color: #500000;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  }
+
+  .download-fab:hover,
+  .download-fab:focus {
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+    background-color: #3d0000;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .download-fab:focus {
+    outline: 0.2rem solid rgba(80, 0, 0, 0.5);
+    outline-offset: 0.15rem;
+  }
+
+  .download-fab .download-fab__icon {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 576px) {
+    .download-fab {
+      right: 1rem;
+      bottom: 1rem;
+      height: 2.75rem;
+      padding: 0 1rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  @media print {
+    .download-fab {
+      display: none !important;
+    }
+  }
+</style>
+
+<a href="/resume.pdf" class="download-fab" download aria-label="Download resume as PDF">
+  <span class="download-fab__icon" aria-hidden="true"><i class="fas fa-download"></i></span>
+  <span class="download-fab__text">Download PDF</span>
+</a>

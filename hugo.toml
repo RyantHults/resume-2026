@@ -145,7 +145,7 @@ theme = 'hugo-devresume'
 
     [params.summary]
         enable = true
-        text = "With 7+ years of backend development experience and a passion for full-stack applications and DevOps, I specialize in building efficient, scalable systems. My work spans from greenfield architecting, to performance tuning, to infrastructure automation and beyond. I'm always focused on clean, maintainable code that delivers measurable impact. From defense systems to SaaS platforms, I thrive on solving complex technical challenges across the stack."
+        text = "With 8+ years of backend development experience and a passion for full-stack applications and DevOps, I specialize in building efficient, scalable systems. My work spans from greenfield architecting, to performance tuning, to infrastructure automation and beyond. I'm always focused on clean, maintainable code that delivers measurable impact. From defense systems to SaaS platforms, I thrive on solving complex technical challenges across the stack."
 
     [params.experience]
         enable = true

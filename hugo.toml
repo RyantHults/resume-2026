@@ -28,7 +28,7 @@ theme = 'hugo-devresume'
 
     [params.contact]
         enable = true
-        location = "Fort Worth, Texas"
+        location = "Port Townsend, WA"
 
         [[params.contact.list]]
         icon = "fas fa-phone-square"

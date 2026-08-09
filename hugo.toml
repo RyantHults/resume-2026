@@ -198,10 +198,17 @@ theme = 'hugo-devresume'
         enable = true
 
         [[params.projects.list]]
+        title = "Limux"
+        meta = "Rust, Go, Zig"
+        tagline = "A Rewrite of the terminal multipler `cmux` in Rust for Linux"
+        link = "https://github.com/RyantHults/limux"
+        
+        [[params.projects.list]]
         title = "Personal Cloud Media Delivery Service"
         meta = "Ansible, Docker, Python, S3"
         tagline = "A cloud-based collection of containerized services that enable management and playback of personal media over the web, leveraging S3 object storage as a scalable, cost-efficient storage solution"
-
+        link = "https://weseek.space"
+        
         [[params.projects.list]]
         title = "Realtime Content Rendering Service"
         meta = "Python, Amazon ECS, Puppeteer"

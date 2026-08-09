@@ -200,7 +200,7 @@ theme = 'hugo-devresume'
         [[params.projects.list]]
         title = "Limux"
         meta = "Rust, Go, Zig"
-        tagline = "A Rewrite of the terminal multipler `cmux` in Rust for Linux"
+        tagline = "A Rewrite of the multitasking terminal `cmux` in Rust for Linux"
         link = "https://github.com/RyantHults/limux"
         
         [[params.projects.list]]

@@ -119,7 +119,7 @@ theme = 'hugo-devresume'
         enable = true
 
         [[params.education.list]]
-        degree = "BS in Eletronic Systems Engineering"
+        degree = "BS in Electronic Systems Engineering"
         university = "Texas A&M University"
         dates = "2016"
 
@@ -156,11 +156,11 @@ theme = 'hugo-devresume'
         company = "Belva"
         details = "In my time at Belva, I provided technical leadership across critical engineering initiatives, partnering with cross-functional teams to deliver scalable software, improve engineering practices, and support the organization's long-term technical strategy."
         [[params.experience.list.items]]
-        details = "Served as a technical leader for high-impact initiatives, resolving complex engineering challenges and mentoring teammates through difficult problems."
+        details = "Served as a technical leader for high-impact initiatives, mentoring 3 engineers through hands-on feedback and process guidance while resolving complex engineering challenges."
         [[params.experience.list.items]]
-        details = "Led the rollout of organization-wide AI development practices, improving developer productivity and engineering consistency."
+        details = "Led the rollout of organization-wide AI development practices across 2 teams and 6 engineers, reducing PR review time by 30%."
         [[params.experience.list.items]]
-        details = "Drove product and engineering improvements by providing actionable technical guidance, influencing design decisions, and advocating for scalable solutions."
+        details = "Drove product and engineering improvements by introducing process changes that reduced sprint-to-sprint ticket spillover by more than 20%, improving delivery predictability and cross-team alignment."
 
         [[params.experience.list]]
         title = "Senior Software Engineer"
@@ -168,13 +168,13 @@ theme = 'hugo-devresume'
         company = "Monetate"
         details = "As a technical leader, I drove large-scale infrastructure improvements and cost-efficient optimizations while fostering cross-team collaboration to enhance system reliability and operational processes. My work involved modernizing legacy systems, mentoring engineers, and implementing best practices to elevate both technical output and organizational efficiency."
         [[params.experience.list.items]]
-        details = "Led the planning and implementation of a major refactor of our AI product offering, reducing compute costs by over 20% and increasing client revenue per session by 30%. Managed team agile processes throughout the project."
+        details = "Led the planning and implementation of a major refactor of Monetate's AI product offering, reducing compute costs by over 20% and increasing client revenue per session by 30%; managed sprint rituals and agile processes for a 4-person engineering team throughout the project."
         [[params.experience.list.items]]
-        details = "Led the planning and execution of migrating critical components of the company's codebase from Python 2 to Python 3, ensuring compatibility and minimal disruption."
+        details = "Directed the planning and execution of migrating 4 critical services, including the core product service, from Python 2 to Python 3 with zero downtime ensuring compatibility and minimal disruption."
         [[params.experience.list.items]]
-        details = "Led cross-team initiatives to streamline and document critical processes, enhancing operational efficiency and knowledge sharing"
+        details = "Spearheaded cross-team initiatives to streamline and document critical processes, improving internal developer documentation and increasing team sprint velocity by 10%."
         [[params.experience.list.items]]
-        details = "Guided junior engineers through Python best practices and system design, improving team code quality and output."
+        details = "Guided 4 junior engineers through Python best practices and system design, measurably improving their PR quality and code review feedback contributions."
 
         [[params.experience.list]]
         title = "Software Engineer"
@@ -188,11 +188,7 @@ theme = 'hugo-devresume'
         [[params.experience.list.items]]
         details = "Improved back-end infrastructure to reduce complexity and coldstart times by 15%."
         [[params.experience.list.items]]
-        details = "Worked on HLA, middleware logic, and MAK Logger interface"
-        [[params.experience.list.items]]
-        details = "Design and maintain a High-Level Architecture (HLA) Federate."
-        [[params.experience.list.items]]
-        details = "Fixed mission-critical bugs, including memory mismanagement issues and segmentation faults."
+        details = "Resolved mission-critical bugs, including memory mismanagement and segmentation faults, and delivered incremental feature enhancements across the HLA Federate, middleware logic, and MAK Logger interface in response to client-reported issues."
 
     [params.projects]
         enable = true

@@ -121,7 +121,7 @@ theme = 'hugo-devresume'
         [[params.education.list]]
         degree = "BS in Electronic Systems Engineering"
         university = "Texas A&M University"
-        dates = "2016"
+        dates = "2017"
 
     [params.languages]
         enable = true

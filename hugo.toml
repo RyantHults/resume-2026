@@ -31,10 +31,6 @@ theme = 'hugo-devresume'
         location = "Fort Worth, TX"
 
         [[params.contact.list]]
-        icon = "fas fa-phone-square"
-        url = "tel:+14053456770"
-        text = "(+1) 405-345-6770"
-        [[params.contact.list]]
         icon = "fas fa-envelope-square"
         url = "mailto:contact@ryanthults.com"
         text = "contact@ryanthults.com"
